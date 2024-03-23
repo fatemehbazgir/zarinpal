@@ -511,6 +511,75 @@ header {
   margin-right: 10px;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: auto;
+}
+
+footer .footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: calc(100% - 330px);
+  margin-bottom: 50px;
+  padding: 0 10px;
+}
+
+.social-media {
+  width: 330px;
+  padding: 0 30px;
+  margin-bottom: 100px;
+}
+
+.social-media p {
+  font-family: YekanBakhHeavy;
+  font-size: 1.3rem;
+  color: #303030;
+}
+
+.social-media div {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-media a {
+  background-color: #eff4fe;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.footer-links p {
+  font-size: 1.3rem;
+  font-family: YekanBakhHeavy;
+  margin-top: 15px;
+  color: #303030;
+}
+
+.footer-links p:hover {
+  color: #28457b;
+}
+
+.footer-links ul {
+  list-style-type: none;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-family: iranyekanwebmedium;
+}
+
+.footer-links li {
+  padding: 8px 0;
+}
+
 /* Animation for hamburger menu */
 @keyframes fadeInDown {
   0% {
@@ -603,6 +672,10 @@ header {
   .support-request {
     font-size: 18px;
   }
+
+  footer {
+    width: 940px;
+  }
 }
 
 @media (max-width: 990px) {
@@ -675,6 +748,19 @@ header {
   .support-number {
     font-size: 14PX;
   }
+
+  footer {
+    flex-direction: column;
+    width: calc(100% - 60px);
+  }
+
+  footer .footer-links {
+    width: 100%;
+  }
+
+  footer .social-media {
+    padding: 0 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -742,6 +828,19 @@ header {
     border-radius: 35px;
     margin-top: 20px;
   }
+
+  footer .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer .footer-links div {
+    margin-top: 25px;
+  }
+
+  footer {
+    width: calc(100% - 120px);
+    margin: 0 60px;
+  }
 }
 
 
@@ -799,5 +898,40 @@ header {
   .support-number,
   .support-request {
     font-size: 0.95rem;
+  }
+
+  footer {
+    width: calc(100% - 60px);
+    margin: 0 30px;
+  }
+
+  .footer-links p,
+  .footer-links a {
+    font: 0.9rem;
+  }
+}
+
+@media(max-width:402px) {
+  .section-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+  }
+
+  .section-text h3,
+  h2 {
+    padding: 0 10px;
+    margin: 0 10px;
+    text-align: center;
+  }
+
+  .section-text {
+    width: 80%;
+  }
+
+  .section-links .first-button {
+    margin-bottom: 10px;
   }
 }
