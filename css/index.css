@@ -474,6 +474,43 @@ header {
   margin-top: 10px;
 }
 
+.support {
+  width: 1110px;
+  height: 70px;
+  padding: 0 30px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fbf6f1;
+  border-radius: 35px;
+}
+
+.support-number {
+  font-family: YekanBakhHeavy;
+  font-size: 1.2rem;
+}
+
+.line {
+  margin: 0 15px;
+}
+
+.phone-number {
+  color: #21254e;
+}
+
+.support-request {
+  display: flex;
+  color: #21254e;
+  font-size: 22px;
+  font-family: YekanBakhBold;
+}
+
+.support-request img {
+  width: 20px;
+  margin-right: 10px;
+}
+
 /* Animation for hamburger menu */
 @keyframes fadeInDown {
   0% {
@@ -553,6 +590,19 @@ header {
   .start-box {
     width: 940px;
   }
+
+  .support {
+    width: 900px;
+    padding: 0 20px;
+  }
+
+  .support-number {
+    font-size: 15px;
+  }
+
+  .support-request {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 990px) {
@@ -616,6 +666,15 @@ header {
     margin: 0 38px;
     width: calc(100% - 76px);
   }
+
+  .support {
+    width: calc(100% - 40PX);
+  }
+
+  .support-request,
+  .support-number {
+    font-size: 14PX;
+  }
 }
 
 @media (max-width: 768px) {
@@ -670,6 +729,19 @@ header {
     margin: 0 8px;
     width: calc(100% - 16px);
   }
+
+  .support {
+    flex-direction: column;
+    align-items: flex-start;
+    background: none;
+  }
+
+  .support-request {
+    background-color: #fbf6f1;
+    padding: 5px 20px;
+    border-radius: 35px;
+    margin-top: 20px;
+  }
 }
 
 
@@ -716,5 +788,16 @@ header {
 
   .start-box p {
     font-size: 1rem;
+  }
+
+  .support {
+    width: calc(100% - 20px);
+    padding: 0;
+    margin: 50px 30px;
+  }
+
+  .support-number,
+  .support-request {
+    font-size: 0.95rem;
   }
 }
